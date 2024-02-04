@@ -1,0 +1,39 @@
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: stretch;
+    gap: 1em;
+    margin-top: 8rem;
+    box-sizing: border-box;
+}
+
+.menu-item {
+    box-sizing: inherit;
+    width: 100%;
+    height: 100%;
+    padding: 1em .5em;
+    border-radius: 5px;
+    border: 1px solid #fefefe;
+    text-align: center;
+}
+
+.menu-item__image {
+    object-fit: cover;
+    display: block;
+    margin-bottom: 1em;
+    border-radius: 50%;
+    margin-inline: auto;
+}
+
+.menu-item__name {
+    line-height: 1.1;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+@media all and (max-width: 1199px) {
+    .menu-items {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+}

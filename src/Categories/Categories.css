@@ -1,0 +1,15 @@
+.btn-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1em;
+    max-width: 768px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    flex-wrap: wrap; 
+}
+
+.btn.is-active {
+    outline: 2px solid #fefefe;
+    outline-offset: 2px;
+}
